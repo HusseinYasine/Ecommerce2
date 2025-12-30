@@ -208,3 +208,30 @@ hr{
 #banner button{
     background-color: #fb774b;
 }
+#banner button:hover{
+    background-color: #ff8c65;
+}
+@media only screen and (max-width:768px ){
+    #home{
+        height: 70vh;
+        background-position: center 65px;
+        text-align: center;
+        align-items: center;
+    }
+    #home h1{
+        font-size: 1.8rem;
+    }
+    #home p{
+        font-size: 0.9rem;
+    }
+    #new .one .details{
+        align-items: center !important;
+        text-align: center !important;
+    }
+    #banner{
+        height: 50vh;
+        background-attachment: scroll;
+        text-align: center;
+        align-items: center;
+    }
+}
