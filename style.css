@@ -279,3 +279,39 @@ footer .copyright a:hover{
 .navbar{
     box-shadow: 0 5px 10px rgba(0,0,0,0.1);
 }
+.brand-container {
+  overflow: hidden;        /* hide overflowing images */
+  width: 100%;
+  padding: 2rem 0;
+  background-color: #fff;  /* optional background */
+}
+
+.brand-track {
+  display: flex;
+  width: calc(12 * 150px); /* adjust based on total logos width */
+  animation: scrollBrands 20s linear infinite;
+}
+
+.brand-logo {
+  width: 150px;             /* logo size */
+  margin: 0 1rem;           /* space between logos */
+  object-fit: contain;
+}
+
+/* Infinite scroll animation */
+@keyframes scrollBrands {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); /* scroll half of duplicated track */
+  }
+}
+
+/* Optional responsive */
+@media (max-width: 768px) {
+  .brand-logo {
+    width: 100px;
+    margin: 0 0.5rem;
+  }
+}
