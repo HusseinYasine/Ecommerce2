@@ -322,3 +322,32 @@ footer .copyright a:hover{
     object-fit: cover;
 }
 
+
+* blog */
+
+#blog-container .post .post-img {
+  overflow: hidden;
+  cursor: pointer;
+border-radius: 20px;
+}
+
+#blog-container .post .post-img img {
+  transition: 0.3s ease;
+    border-radius: 20px;
+}
+
+#blog-container .post:hover img {
+  transform: scale(1.3) rotate(-10deg);
+  opacity: 0.8;
+    border-radius: 20px;
+}
+#blog-container .post:hover h3 {
+  color: #fd8c66;
+    border-radius: 20px;
+}
+
+.post-img {
+  position: relative;
+  overflow: hidden;
+}
+
